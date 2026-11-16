@@ -1,0 +1,10 @@
+.git
+.gitignore
+.env
+config.local.php
+vendor
+.phpunit.cache
+.phpunit.result.cache
+tests/.tmp
+*.log
+.DS_Store

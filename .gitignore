@@ -1,5 +1,6 @@
 /vendor/
 /config.local.php
+/.env
 /.phpunit.cache/
 /.phpunit.result.cache
 /tests/.tmp/

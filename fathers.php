@@ -163,7 +163,7 @@ require __DIR__ . '/partials/header.php';
                     $fatherId = (int) $father['id'];
                     $catsCount = (int) $father['cats_count'];
                     $confirmText = $catsCount > 0
-                        ? 'Удалить отца «' . $father['name'] . '»? У ' . cats_count($catsCount) . ' связь с ним тоже исчезнет.'
+                        ? 'Удалить отца «' . $father['name'] . '»? Связи с кошками (' . cats_count($catsCount) . ') тоже будут удалены.'
                         : 'Удалить отца «' . $father['name'] . '» из справочника?';
                     ?>
                     <div class="father-row">
@@ -172,7 +172,7 @@ require __DIR__ . '/partials/header.php';
                             <span class="father-name"><?= e($father['name']) ?></span>
                             <span class="father-meta">
                                 <?= $catsCount > 0
-                                    ? e('Указан у ' . cats_count($catsCount))
+                                    ? e('Указан как отец: ' . cats_count($catsCount))
                                     : 'Пока ни к кому не привязан' ?>
                             </span>
                         </span>
