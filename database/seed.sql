@@ -1,3 +1,5 @@
+SET NAMES utf8mb4;
+
 INSERT INTO fathers (id, name) VALUES
     (1, 'Барсик'),
     (2, 'Снежок'),
